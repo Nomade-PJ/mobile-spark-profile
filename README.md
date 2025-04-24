@@ -4,6 +4,31 @@
 
 **URL**: https://lovable.dev/projects/474b46aa-d293-41a8-9a3a-52ae57636fa0
 
+## Configuração do Servidor e Banco de Dados
+
+Este projeto utiliza PostgreSQL como banco de dados. Para configurar o ambiente:
+
+1. Certifique-se que o PostgreSQL está instalado e em execução.
+2. Na pasta `server`, execute os seguintes scripts:
+
+```sh
+# Configurar conexão com o banco de dados:
+node fix-connection.js
+
+# Iniciar o servidor:
+npm start
+```
+
+Para mais detalhes sobre a configuração e solução de problemas, consulte o arquivo [SOLUCAO.md](server/SOLUCAO.md) na pasta server.
+
+### Scripts Disponíveis
+
+O projeto inclui os seguintes scripts utilitários na pasta `server`:
+
+- `fix-connection.js` - Configura o ambiente e conexão com o banco
+- `atualizar-admin.js` - Atualiza ou cria o usuário administrador
+- `limpar-tabelas.js` - Limpa e recria as tabelas do banco de dados
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
